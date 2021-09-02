@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="app">
         <Header />
-        <div className="app_body">
+        <div className="app__body">
           <SideBar />
           <Switch>
             <Route path="/mail">
