@@ -8,7 +8,6 @@ function App() {
     <div className="app">
       <Header />
       <SideBar />
-      <h2>gmail</h2>
     </div>
   );
 }
