@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./EmailList.css";
 import { Checkbox, IconButton } from "@material-ui/core";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
@@ -14,8 +14,23 @@ import PeopleIcon from "@material-ui/icons/People";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import { Route } from "react-router-dom";
 import EmailRow from "./EmailRow";
+import { db } from "./firebase";
 
 function EmailList() {
+  const [emails, SetEmails] = useState([]);
+  useEffect(() => {
+    db.collection("emails")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        SetEmails(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
+    console.log("data:", db.collection("emails"));
+  }, []);
   return (
     <div className="emailList">
       <div className="emailList__settings">
@@ -52,7 +67,17 @@ function EmailList() {
         <Section Icon={LocalOfferIcon} title="Promotions" color="green" />
       </div>
       <div className="emalList__list">
-        <EmailRow
+        {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
+          <EmailRow
+            id={id}
+            key={id}
+            title={to}
+            subject={subject}
+            description={message}
+            time={new Date(timestamp?.seconds * 1000).toUTCString()}
+          />
+        ))}
+        {/* <EmailRow
           title="Hello"
           subject="hey from me"
           description="This is test"
@@ -63,7 +88,7 @@ function EmailList() {
           subject="hey again from me"
           description="This is second test"
           time="10pm"
-        />
+        /> */}
       </div>
     </div>
   );
