@@ -77,7 +77,7 @@ function EmailList() {
             time={new Date(timestamp?.seconds * 1000).toUTCString()}
           />
         ))}
-        {/* <EmailRow
+        <EmailRow
           title="Hello"
           subject="hey from me"
           description="This is test"
@@ -88,7 +88,127 @@ function EmailList() {
           subject="hey again from me"
           description="This is second test"
           time="10pm"
-        /> */}
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hello"
+          subject="hey from me"
+          description="This is test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hey"
+          subject="hey again from me"
+          description="This is second test"
+          time="10pm"
+        />
       </div>
     </div>
   );
