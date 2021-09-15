@@ -17,3 +17,25 @@
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    border-right: 40px;
+    padding-right: 20px;
+  }
+  .sidebar__compose {
+    margin-top: 8px !important;
+    margin-left: 1px !important;
+
+    margin-bottom: 20px !important;
+    font-size: xx-small !important;
+
+    padding: 2px !important;
+  }
+  .MuiButton-label {
+    padding: 3px;
+    padding-right: 6px;
+  }
+  .sidebar__footer {
+    display: none;
+  }
+}
