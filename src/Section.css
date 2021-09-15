@@ -1,5 +1,6 @@
 .section {
   display: flex;
+
   align-items: center;
   border-bottom-width: 2px;
   padding: 15px;

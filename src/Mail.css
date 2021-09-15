@@ -50,15 +50,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .mail {
-    flex: 1;
-    background-color: whitesmoke;
-  }
   .mail__tools {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    transform: scale(0.7);
+    transform: scale(0.95);
   }
   .mail__toolsLeft {
     display: flex;
@@ -101,15 +94,16 @@
   }
   .mail__time {
     display: none;
-    position: absolute;
-    top: 30px;
-
-    font-size: 6px;
-    color: gray;
   }
   .mail__message > p {
     padding-top: 5px;
     margin-left: 10px;
     /* overflow-wrap: break-word; */
+  }
+  .mail__toolsRight {
+    display: none;
+  }
+  .MuiIconButton-root {
+    padding: 3px;
   }
 }

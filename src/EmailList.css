@@ -20,8 +20,10 @@
   border-bottom: 1px solid whitesmoke;
   z-index: 999;
   padding-right: 10px;
+  background-color: white;
 }
 .emailList__sections {
+  background-color: white;
   position: sticky;
   top: 0;
   display: flex;
@@ -30,4 +32,9 @@
 }
 .emailList__list {
   padding-bottom: 20%;
+}
+@media only screen and (max-width: 600px) {
+  .emailList__settings {
+    display: none;
+  }
 }
