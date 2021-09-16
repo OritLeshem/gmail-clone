@@ -1,5 +1,5 @@
-Gmail-clone was bootstrapped with React using Redux.
-
+**Gmail-clone was bootstrapped with React using Redux.
+**
 Screen Shots:
 
 
@@ -14,7 +14,7 @@ Screen Shots:
 
 
 
-used:
+**used:**
 Firebase for db, auth and login
 
 
