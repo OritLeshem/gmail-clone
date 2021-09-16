@@ -1,6 +1,6 @@
-**Gmail-clone was bootstrapped with React using Redux.
-**
-Screen Shots:
+**Gmail-clone was bootstrapped with React using Redux.**
+
+**Screen Shots:**
 
 
 
