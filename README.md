@@ -15,7 +15,9 @@
 
 
 **used:**
+
 Firebase for db, auth and login
+
 matirial ui
 
 [firebase deploy](https://fir-c3a65.web.app/)  |
